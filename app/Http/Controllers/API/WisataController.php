@@ -149,7 +149,7 @@ class WisataController extends Controller
                 return ApiFormatter::createApi(400, 'Failed update data wisata', []);
             }
         } catch (Exception $error) {
-            return ApiFormatter::createApi(400, 'Failed update data wisata' . $error, []);
+            return ApiFormatter::createApi(400, 'Failed update data wisata =' . $error, []);
         }
     }
 
