@@ -15,10 +15,10 @@ class CreateWisataTable extends Migration
     {
         Schema::create('wisata', function (Blueprint $table) {
             $table->id();
-            $table->integer('kategori_id')->nullable();
+            $table->string('kategori_id')->nullable();
             $table->string('nama_wisata')->nullable();
             $table->string('slug')->nullable();
-            $table->integer('harga')->nullable();
+            $table->string('harga')->nullable();
             $table->string('deskripsi')->nullable();
             $table->string('kota')->nullable();
             $table->string('provinsi')->nullable();
